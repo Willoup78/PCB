@@ -265,9 +265,28 @@
 <wire x1="0.8" y1="0" x2="0.8" y2="-0.7" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0" x2="0.5" y2="0" width="0.127" layer="21"/>
 </package>
+<package name="CON_2.54MM_16PINS_STACKABLE">
+<pad name="P$1" x="0" y="0" drill="0.8"/>
+<pad name="P$2" x="2.54" y="0" drill="0.8"/>
+<pad name="P$3" x="5.08" y="0" drill="0.8"/>
+<pad name="P$4" x="-2.54" y="0" drill="0.8"/>
+<pad name="P$5" x="-5.08" y="0" drill="0.8"/>
+<pad name="P$6" x="-7.62" y="0" drill="0.8"/>
+<pad name="P$7" x="7.62" y="0" drill="0.8"/>
+<pad name="P$8" x="10.16" y="0" drill="0.8"/>
+<pad name="P$9" x="0" y="27.5" drill="0.8"/>
+<pad name="P$10" x="0" y="27.5" drill="0.8"/>
+<pad name="P$11" x="2.54" y="27.5" drill="0.8"/>
+<pad name="P$12" x="5.08" y="27.5" drill="0.8"/>
+<pad name="P$13" x="7.62" y="27.5" drill="0.8"/>
+<pad name="P$14" x="10.16" y="27.5" drill="0.8"/>
+<pad name="P$15" x="-2.54" y="27.5" drill="0.8"/>
+<pad name="P$16" x="-5.08" y="27.5" drill="0.8"/>
+<pad name="P$17" x="-7.62" y="27.5" drill="0.8"/>
+</package>
 </packages>
 <symbols>
-<symbol name="ST32F407VGT6-100">
+<symbol name="STM32F407VGT6-100">
 <pin name="PA0" x="53.34" y="38.1" length="middle" rot="R180"/>
 <pin name="PA1" x="53.34" y="35.56" length="middle" rot="R180"/>
 <pin name="PA2" x="53.34" y="33.02" length="middle" rot="R180"/>
@@ -285,7 +304,7 @@
 <pin name="PA14" x="53.34" y="2.54" length="middle" rot="R180"/>
 <pin name="PB0" x="53.34" y="-7.62" length="middle" rot="R180"/>
 <pin name="PB1" x="53.34" y="-10.16" length="middle" rot="R180"/>
-<pin name="PB2" x="53.34" y="-12.7" length="middle" rot="R180"/>
+<pin name="(BOOT1)_PB2" x="53.34" y="-12.7" length="middle" rot="R180"/>
 <pin name="PB3" x="53.34" y="-15.24" length="middle" rot="R180"/>
 <pin name="PB4" x="53.34" y="-17.78" length="middle" rot="R180"/>
 <pin name="PB5" x="53.34" y="-20.32" length="middle" rot="R180"/>
@@ -448,17 +467,56 @@
 <wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
 <text x="0" y="2.54" size="1.778" layer="95">Name</text>
 </symbol>
+<symbol name="CON_2.54MM_16PINS_STACKABLE">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="5.08" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="10.16" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="15.24" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="20.32" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="25.4" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="30.48" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="35.56" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="5.08" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="10.16" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="15.24" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="20.32" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="25.4" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="30.48" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="35.56" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="38.1" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-10.16" x2="38.1" y2="2.54" width="0.254" layer="94"/>
+<wire x1="38.1" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$2" x="5.08" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$3" x="10.16" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$4" x="15.24" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$5" x="20.32" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$6" x="25.4" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$7" x="30.48" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$8" x="35.56" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$9" x="35.56" y="7.62" length="middle" rot="R270"/>
+<pin name="P$10" x="30.48" y="7.62" length="middle" rot="R270"/>
+<pin name="P$11" x="25.4" y="7.62" length="middle" rot="R270"/>
+<pin name="P$12" x="20.32" y="7.62" length="middle" rot="R270"/>
+<pin name="P$13" x="15.24" y="7.62" length="middle" rot="R270"/>
+<pin name="P$14" x="10.16" y="7.62" length="middle" rot="R270"/>
+<pin name="P$15" x="5.08" y="7.62" length="middle" rot="R270"/>
+<pin name="P$16" x="0" y="7.62" length="middle" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F407VGT6-100">
 <description>Stm32F407VGT6 microcontroler
 with LQFP100 footprint (100 pins)</description>
 <gates>
-<gate name="G$1" symbol="ST32F407VGT6-100" x="0" y="-2.54"/>
+<gate name="G$1" symbol="STM32F407VGT6-100" x="0" y="-2.54"/>
 </gates>
 <devices>
 <device name="" package="STM32F407VGT6-100">
 <connects>
+<connect gate="G$1" pin="(BOOT1)_PB2" pad="P37"/>
 <connect gate="G$1" pin="BOOT0" pad="P94"/>
 <connect gate="G$1" pin="NRST" pad="P14"/>
 <connect gate="G$1" pin="PA0" pad="P23"/>
@@ -485,7 +543,6 @@ with LQFP100 footprint (100 pins)</description>
 <connect gate="G$1" pin="PB13" pad="P52"/>
 <connect gate="G$1" pin="PB14" pad="P53"/>
 <connect gate="G$1" pin="PB15" pad="P54"/>
-<connect gate="G$1" pin="PB2" pad="P37"/>
 <connect gate="G$1" pin="PB3" pad="P89"/>
 <connect gate="G$1" pin="PB4" pad="P90"/>
 <connect gate="G$1" pin="PB5" pad="P91"/>
@@ -669,6 +726,18 @@ with LQFP100 footprint (100 pins)</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON_2.54MM_16PINS_STACKABLE">
+<gates>
+<gate name="G$1" symbol="CON_2.54MM_16PINS_STACKABLE" x="-17.78" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON_2.54MM_16PINS_STACKABLE">
 <technologies>
 <technology name=""/>
 </technologies>

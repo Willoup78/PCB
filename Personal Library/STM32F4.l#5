@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -252,6 +252,29 @@
 <circle x="0" y="-6" radius="3" width="0.127" layer="21"/>
 <text x="-2.3" y="1.8" size="1.27" layer="25">Name</text>
 </package>
+<package name="LED">
+<smd name="A" x="-1.1" y="0" dx="1.1" dy="1.25" layer="1" rot="R90"/>
+<smd name="C" x="1.1" y="0" dx="1.1" dy="1.25" layer="1" rot="R90"/>
+<wire x1="-1.2" y1="0.7" x2="-1.2" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-0.7" x2="0.8" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.7" x2="1.2" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-0.7" x2="1.2" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.2" y1="0.7" x2="0.8" y2="0.7" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="-1.2" y2="0.7" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="0.8" y2="0" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0" x2="0.8" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0" x2="0.5" y2="0" width="0.127" layer="21"/>
+</package>
+<package name="CON_2.54MM_16PINS_STACKABLE">
+<pad name="P$1" x="0" y="0" drill="0.8"/>
+<pad name="P$2" x="2.54" y="0" drill="0.8"/>
+<pad name="P$3" x="5.08" y="0" drill="0.8"/>
+<pad name="P$4" x="-2.54" y="0" drill="0.8"/>
+<pad name="P$5" x="-5.08" y="0" drill="0.8"/>
+<pad name="P$6" x="-7.62" y="0" drill="0.8"/>
+<pad name="P$7" x="7.62" y="0" drill="0.8"/>
+<pad name="P$8" x="10.16" y="0" drill="0.8"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ST32F407VGT6-100">
@@ -423,6 +446,39 @@
 <wire x1="-5.08" y1="20.32" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="17.78" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
 <text x="-5.08" y="22.86" size="1.778" layer="95">Name</text>
+</symbol>
+<symbol name="LED">
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="A" x="-7.62" y="0" length="middle"/>
+<pin name="C" x="10.16" y="0" length="middle" rot="R180"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="95">Name</text>
+</symbol>
+<symbol name="CON_2.54MM_16PINS_STACKABLE">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="5.08" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="10.16" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="15.24" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="20.32" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="25.4" y="0" radius="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="38.1" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="38.1" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="-7.62" length="middle" rot="R90"/>
+<pin name="P$2" x="5.08" y="-7.62" length="middle" rot="R90"/>
+<pin name="P$3" x="10.16" y="-7.62" length="middle" rot="R90"/>
+<pin name="P$4" x="15.24" y="-7.62" length="middle" rot="R90"/>
+<pin name="P$5" x="20.32" y="-7.62" length="middle" rot="R90"/>
+<pin name="P$6" x="25.4" y="-7.62" length="middle" rot="R90"/>
+<circle x="30.48" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="35.56" y="0" radius="1.27" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-2.54" x2="38.1" y2="2.54" width="0.254" layer="94"/>
+<pin name="P$7" x="30.48" y="-7.62" length="middle" rot="R90"/>
+<pin name="P$8" x="35.56" y="-7.62" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -629,6 +685,34 @@ with LQFP100 footprint (100 pins)</description>
 <connect gate="G$1" pin="P8" pad="P8"/>
 <connect gate="G$1" pin="P9" pad="P9"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON_2.54MM_16PINS_STACKABLE">
+<gates>
+<gate name="G$1" symbol="CON_2.54MM_16PINS_STACKABLE" x="-17.78" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON_2.54MM_16PINS_STACKABLE">
 <technologies>
 <technology name=""/>
 </technologies>
