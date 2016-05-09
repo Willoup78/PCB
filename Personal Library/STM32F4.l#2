@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
@@ -23,18 +23,18 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -266,27 +266,27 @@
 <wire x1="0.8" y1="0" x2="0.5" y2="0" width="0.127" layer="21"/>
 </package>
 <package name="CON_2.54MM_16PINS_STACKABLE">
-<pad name="P$1" x="0" y="0" drill="0.8"/>
-<pad name="P$2" x="2.54" y="0" drill="0.8"/>
-<pad name="P$3" x="5.08" y="0" drill="0.8"/>
-<pad name="P$4" x="-2.54" y="0" drill="0.8"/>
-<pad name="P$5" x="-5.08" y="0" drill="0.8"/>
-<pad name="P$6" x="-7.62" y="0" drill="0.8"/>
-<pad name="P$7" x="7.62" y="0" drill="0.8"/>
-<pad name="P$8" x="10.16" y="0" drill="0.8"/>
+<pad name="P4" x="0" y="0" drill="0.8"/>
+<pad name="P5" x="2.54" y="0" drill="0.8"/>
+<pad name="P6" x="5.08" y="0" drill="0.8"/>
+<pad name="P3" x="-2.54" y="0" drill="0.8"/>
+<pad name="P2" x="-5.08" y="0" drill="0.8"/>
+<pad name="P1" x="-7.62" y="0" drill="0.8"/>
+<pad name="P7" x="7.62" y="0" drill="0.8"/>
+<pad name="P8" x="10.16" y="0" drill="0.8"/>
 <pad name="P$9" x="0" y="27.5" drill="0.8"/>
-<pad name="P$10" x="0" y="27.5" drill="0.8"/>
-<pad name="P$11" x="2.54" y="27.5" drill="0.8"/>
-<pad name="P$12" x="5.08" y="27.5" drill="0.8"/>
-<pad name="P$13" x="7.62" y="27.5" drill="0.8"/>
-<pad name="P$14" x="10.16" y="27.5" drill="0.8"/>
-<pad name="P$15" x="-2.54" y="27.5" drill="0.8"/>
-<pad name="P$16" x="-5.08" y="27.5" drill="0.8"/>
-<pad name="P$17" x="-7.62" y="27.5" drill="0.8"/>
+<pad name="P13" x="0" y="27.5" drill="0.8"/>
+<pad name="P12" x="2.54" y="27.5" drill="0.8"/>
+<pad name="P11" x="5.08" y="27.5" drill="0.8"/>
+<pad name="P10" x="7.62" y="27.5" drill="0.8"/>
+<pad name="P9" x="10.16" y="27.5" drill="0.8"/>
+<pad name="P14" x="-2.54" y="27.5" drill="0.8"/>
+<pad name="P15" x="-5.08" y="27.5" drill="0.8"/>
+<pad name="P16" x="-7.62" y="27.5" drill="0.8"/>
 </package>
 </packages>
 <symbols>
-<symbol name="ST32F407VGT6-100">
+<symbol name="STM32F407VGT6-100">
 <pin name="PA0" x="53.34" y="38.1" length="middle" rot="R180"/>
 <pin name="PA1" x="53.34" y="35.56" length="middle" rot="R180"/>
 <pin name="PA2" x="53.34" y="33.02" length="middle" rot="R180"/>
@@ -304,7 +304,7 @@
 <pin name="PA14" x="53.34" y="2.54" length="middle" rot="R180"/>
 <pin name="PB0" x="53.34" y="-7.62" length="middle" rot="R180"/>
 <pin name="PB1" x="53.34" y="-10.16" length="middle" rot="R180"/>
-<pin name="PB2" x="53.34" y="-12.7" length="middle" rot="R180"/>
+<pin name="(BOOT1)_PB2" x="53.34" y="-12.7" length="middle" rot="R180"/>
 <pin name="PB3" x="53.34" y="-15.24" length="middle" rot="R180"/>
 <pin name="PB4" x="53.34" y="-17.78" length="middle" rot="R180"/>
 <pin name="PB5" x="53.34" y="-20.32" length="middle" rot="R180"/>
@@ -488,23 +488,22 @@
 <wire x1="-2.54" y1="-10.16" x2="38.1" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="38.1" y1="-10.16" x2="38.1" y2="2.54" width="0.254" layer="94"/>
 <wire x1="38.1" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<pin name="P$1" x="0" y="-15.24" length="middle" rot="R90"/>
-<pin name="P$2" x="5.08" y="-15.24" length="middle" rot="R90"/>
-<pin name="P$3" x="10.16" y="-15.24" length="middle" rot="R90"/>
-<pin name="P$4" x="15.24" y="-15.24" length="middle" rot="R90"/>
-<pin name="P$5" x="20.32" y="-15.24" length="middle" rot="R90"/>
-<pin name="P$6" x="25.4" y="-15.24" length="middle" rot="R90"/>
-<pin name="P$7" x="30.48" y="-15.24" length="middle" rot="R90"/>
-<pin name="P$8" x="35.56" y="-15.24" length="middle" rot="R90"/>
-<pin name="P$9" x="35.56" y="7.62" length="middle" rot="R270"/>
-<pin name="P$10" x="30.48" y="7.62" length="middle" rot="R270"/>
-<pin name="P$11" x="25.4" y="7.62" length="middle" rot="R270"/>
-<pin name="P$12" x="20.32" y="7.62" length="middle" rot="R270"/>
-<pin name="P$13" x="15.24" y="7.62" length="middle" rot="R270"/>
-<pin name="P$14" x="10.16" y="7.62" length="middle" rot="R270"/>
-<pin name="P$15" x="5.08" y="7.62" length="middle" rot="R270"/>
-<pin name="P$16" x="0" y="7.62" length="middle" rot="R270"/>
-<pin name="P$17" x="20.32" y="2.54" length="middle" rot="R270"/>
+<pin name="P1" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="P2" x="5.08" y="-15.24" length="middle" rot="R90"/>
+<pin name="P3" x="10.16" y="-15.24" length="middle" rot="R90"/>
+<pin name="P4" x="15.24" y="-15.24" length="middle" rot="R90"/>
+<pin name="P5" x="20.32" y="-15.24" length="middle" rot="R90"/>
+<pin name="P6" x="25.4" y="-15.24" length="middle" rot="R90"/>
+<pin name="P7" x="30.48" y="-15.24" length="middle" rot="R90"/>
+<pin name="P8" x="35.56" y="-15.24" length="middle" rot="R90"/>
+<pin name="P9" x="35.56" y="7.62" length="middle" rot="R270"/>
+<pin name="P10" x="30.48" y="7.62" length="middle" rot="R270"/>
+<pin name="P11" x="25.4" y="7.62" length="middle" rot="R270"/>
+<pin name="P12" x="20.32" y="7.62" length="middle" rot="R270"/>
+<pin name="P13" x="15.24" y="7.62" length="middle" rot="R270"/>
+<pin name="P14" x="10.16" y="7.62" length="middle" rot="R270"/>
+<pin name="P15" x="5.08" y="7.62" length="middle" rot="R270"/>
+<pin name="P16" x="0" y="7.62" length="middle" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -512,11 +511,12 @@
 <description>Stm32F407VGT6 microcontroler
 with LQFP100 footprint (100 pins)</description>
 <gates>
-<gate name="G$1" symbol="ST32F407VGT6-100" x="0" y="-2.54"/>
+<gate name="G$1" symbol="STM32F407VGT6-100" x="0" y="-2.54"/>
 </gates>
 <devices>
 <device name="" package="STM32F407VGT6-100">
 <connects>
+<connect gate="G$1" pin="(BOOT1)_PB2" pad="P37"/>
 <connect gate="G$1" pin="BOOT0" pad="P94"/>
 <connect gate="G$1" pin="NRST" pad="P14"/>
 <connect gate="G$1" pin="PA0" pad="P23"/>
@@ -543,7 +543,6 @@ with LQFP100 footprint (100 pins)</description>
 <connect gate="G$1" pin="PB13" pad="P52"/>
 <connect gate="G$1" pin="PB14" pad="P53"/>
 <connect gate="G$1" pin="PB15" pad="P54"/>
-<connect gate="G$1" pin="PB2" pad="P37"/>
 <connect gate="G$1" pin="PB3" pad="P89"/>
 <connect gate="G$1" pin="PB4" pad="P90"/>
 <connect gate="G$1" pin="PB5" pad="P91"/>

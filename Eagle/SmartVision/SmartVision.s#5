@@ -767,13 +767,6 @@ with LQFP100 footprint (100 pins)</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="VCCIO">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<text x="-0.508" y="0.254" size="0.8128" layer="94">IO</text>
-<pin name="VCCIO" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -793,19 +786,6 @@ with LQFP100 footprint (100 pins)</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="VCC" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCCIO" prefix="VCC">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="VCCIO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1279,10 +1259,8 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="VCC3" library="supply1" deviceset="VCCIO" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
-<part name="VCC4" library="supply1" deviceset="VCCIO" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 </parts>
@@ -1990,7 +1968,6 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <instance part="U$39" gate="G$1" x="30.48" y="-81.28"/>
 <instance part="GND16" gate="1" x="30.48" y="-91.44"/>
 <instance part="P+5" gate="VCC" x="-76.2" y="-50.8"/>
-<instance part="VCC3" gate="G$1" x="30.48" y="-71.12"/>
 <instance part="P+6" gate="VCC" x="-71.12" y="-73.66"/>
 <instance part="P+7" gate="VCC" x="38.1" y="-50.8"/>
 </instances>
@@ -2192,15 +2169,15 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
 </net>
-<net name="VCCIO" class="0">
+<net name="VCC_ANA" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="P16"/>
 <wire x1="-5.08" y1="-76.2" x2="30.48" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-73.66" x2="30.48" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="U$39" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="-76.2" x2="30.48" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-76.2" x2="48.26" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="30.48" y="-76.2"/>
-<pinref part="VCC3" gate="G$1" pin="VCCIO"/>
+<label x="40.64" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -2216,7 +2193,6 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <instance part="U$49" gate="G$1" x="129.54" y="15.24"/>
 <instance part="U$50" gate="G$1" x="137.16" y="15.24"/>
 <instance part="GND19" gate="1" x="129.54" y="0"/>
-<instance part="VCC4" gate="G$1" x="109.22" y="17.78" rot="R90"/>
 <instance part="P+8" gate="VCC" x="129.54" y="30.48"/>
 <instance part="P+9" gate="VCC" x="137.16" y="38.1"/>
 </instances>
@@ -2265,17 +2241,6 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <label x="116.84" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VCCIO" class="0">
-<segment>
-<wire x1="111.76" y1="17.78" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VDD"/>
-<wire x1="111.76" y1="22.86" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="U$48" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="17.78" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="VCC4" gate="G$1" pin="VCCIO"/>
-<junction x="111.76" y="17.78"/>
-</segment>
-</net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="REGOUT"/>
@@ -2303,6 +2268,18 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <junction x="109.22" y="25.4"/>
 <junction x="129.54" y="25.4"/>
 <pinref part="P+8" gate="VCC" pin="VCC"/>
+</segment>
+</net>
+<net name="VCC_ANA" class="0">
+<segment>
+<wire x1="111.76" y1="17.78" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<wire x1="111.76" y1="22.86" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$48" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="17.78" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
+<junction x="111.76" y="17.78"/>
+<label x="101.6" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

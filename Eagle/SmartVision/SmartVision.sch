@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -333,6 +333,25 @@
 <wire x1="0.8" y1="0" x2="0.8" y2="-0.7" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0" x2="0.5" y2="0" width="0.127" layer="21"/>
 </package>
+<package name="CON_2.54MM_16PINS_STACKABLE">
+<pad name="P4" x="0" y="0" drill="0.8"/>
+<pad name="P5" x="2.54" y="0" drill="0.8"/>
+<pad name="P6" x="5.08" y="0" drill="0.8"/>
+<pad name="P3" x="-2.54" y="0" drill="0.8"/>
+<pad name="P2" x="-5.08" y="0" drill="0.8"/>
+<pad name="P1" x="-7.62" y="0" drill="0.8"/>
+<pad name="P7" x="7.62" y="0" drill="0.8"/>
+<pad name="P8" x="10.16" y="0" drill="0.8"/>
+<pad name="P$9" x="0" y="27.5" drill="0.8"/>
+<pad name="P13" x="0" y="27.5" drill="0.8"/>
+<pad name="P12" x="2.54" y="27.5" drill="0.8"/>
+<pad name="P11" x="5.08" y="27.5" drill="0.8"/>
+<pad name="P10" x="7.62" y="27.5" drill="0.8"/>
+<pad name="P9" x="10.16" y="27.5" drill="0.8"/>
+<pad name="P14" x="-2.54" y="27.5" drill="0.8"/>
+<pad name="P15" x="-5.08" y="27.5" drill="0.8"/>
+<pad name="P16" x="-7.62" y="27.5" drill="0.8"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F407VGT6-100">
@@ -515,6 +534,44 @@
 <wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
 <text x="0" y="2.54" size="1.778" layer="95">Name</text>
+</symbol>
+<symbol name="CON_2.54MM_16PINS_STACKABLE">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="5.08" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="10.16" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="15.24" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="20.32" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="25.4" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="30.48" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="35.56" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="5.08" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="10.16" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="15.24" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="20.32" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="25.4" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="30.48" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<circle x="35.56" y="-7.62" radius="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="38.1" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-10.16" x2="38.1" y2="2.54" width="0.254" layer="94"/>
+<wire x1="38.1" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<pin name="P1" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="P2" x="5.08" y="-15.24" length="middle" rot="R90"/>
+<pin name="P3" x="10.16" y="-15.24" length="middle" rot="R90"/>
+<pin name="P4" x="15.24" y="-15.24" length="middle" rot="R90"/>
+<pin name="P5" x="20.32" y="-15.24" length="middle" rot="R90"/>
+<pin name="P6" x="25.4" y="-15.24" length="middle" rot="R90"/>
+<pin name="P7" x="30.48" y="-15.24" length="middle" rot="R90"/>
+<pin name="P8" x="35.56" y="-15.24" length="middle" rot="R90"/>
+<pin name="P9" x="35.56" y="7.62" length="middle" rot="R270"/>
+<pin name="P10" x="30.48" y="7.62" length="middle" rot="R270"/>
+<pin name="P11" x="25.4" y="7.62" length="middle" rot="R270"/>
+<pin name="P12" x="20.32" y="7.62" length="middle" rot="R270"/>
+<pin name="P13" x="15.24" y="7.62" length="middle" rot="R270"/>
+<pin name="P14" x="10.16" y="7.62" length="middle" rot="R270"/>
+<pin name="P15" x="5.08" y="7.62" length="middle" rot="R270"/>
+<pin name="P16" x="0" y="7.62" length="middle" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -736,6 +793,36 @@ with LQFP100 footprint (100 pins)</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON_2.54MM_16PINS_STACKABLE">
+<gates>
+<gate name="G$1" symbol="CON_2.54MM_16PINS_STACKABLE" x="-17.78" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON_2.54MM_16PINS_STACKABLE">
+<connects>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P10" pad="P10"/>
+<connect gate="G$1" pin="P11" pad="P11"/>
+<connect gate="G$1" pin="P12" pad="P12"/>
+<connect gate="G$1" pin="P13" pad="P13"/>
+<connect gate="G$1" pin="P14" pad="P14"/>
+<connect gate="G$1" pin="P15" pad="P15"/>
+<connect gate="G$1" pin="P16" pad="P16"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P3" pad="P3"/>
+<connect gate="G$1" pin="P4" pad="P4"/>
+<connect gate="G$1" pin="P5" pad="P5"/>
+<connect gate="G$1" pin="P6" pad="P6"/>
+<connect gate="G$1" pin="P7" pad="P7"/>
+<connect gate="G$1" pin="P8" pad="P8"/>
+<connect gate="G$1" pin="P9" pad="P9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1263,6 +1350,8 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
+<part name="U$52" library="STM32F4" deviceset="CON_2.54MM_16PINS_STACKABLE" device=""/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1824,6 +1913,34 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <label x="-106.68" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="CAN2_RX" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB12"/>
+<wire x1="53.34" y1="-38.1" x2="73.66" y2="-38.1" width="0.1524" layer="91"/>
+<label x="66.04" y="-38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAN2_TX" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB13"/>
+<wire x1="53.34" y1="-40.64" x2="73.66" y2="-40.64" width="0.1524" layer="91"/>
+<label x="66.04" y="-40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART4_TX" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA0"/>
+<wire x1="53.34" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
+<label x="66.04" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART4_RX" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA1"/>
+<wire x1="53.34" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<label x="66.04" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -1970,6 +2087,8 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <instance part="P+5" gate="VCC" x="-76.2" y="-50.8"/>
 <instance part="P+6" gate="VCC" x="-71.12" y="-73.66"/>
 <instance part="P+7" gate="VCC" x="38.1" y="-50.8"/>
+<instance part="U$52" gate="G$1" x="96.52" y="10.16"/>
+<instance part="GND21" gate="1" x="96.52" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -2005,6 +2124,10 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <pinref part="U$39" gate="G$1" pin="2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="30.48" y1="-86.36" x2="30.48" y2="-88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$52" gate="G$1" pin="P1"/>
+<pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
@@ -2136,6 +2259,11 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <label x="-96.52" y="-68.58" size="1.778" layer="95"/>
 <junction x="-76.2" y="-68.58"/>
 </segment>
+<segment>
+<pinref part="U$52" gate="G$1" pin="P13"/>
+<wire x1="111.76" y1="17.78" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
+<label x="111.76" y="30.48" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
@@ -2146,6 +2274,11 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <wire x1="38.1" y1="-68.58" x2="58.42" y2="-68.58" width="0.1524" layer="91"/>
 <label x="53.34" y="-68.58" size="1.778" layer="95"/>
 <junction x="38.1" y="-68.58"/>
+</segment>
+<segment>
+<pinref part="U$52" gate="G$1" pin="P14"/>
+<wire x1="106.68" y1="17.78" x2="106.68" y2="38.1" width="0.1524" layer="91"/>
+<label x="106.68" y="30.48" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2178,6 +2311,34 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <wire x1="30.48" y1="-76.2" x2="48.26" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="30.48" y="-76.2"/>
 <label x="40.64" y="-76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART4_TX" class="0">
+<segment>
+<pinref part="U$52" gate="G$1" pin="P9"/>
+<wire x1="132.08" y1="17.78" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
+<label x="132.08" y="30.48" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="UART4_RX" class="0">
+<segment>
+<pinref part="U$52" gate="G$1" pin="P10"/>
+<wire x1="127" y1="17.78" x2="127" y2="38.1" width="0.1524" layer="91"/>
+<label x="127" y="30.48" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="CAN2_RX" class="0">
+<segment>
+<pinref part="U$52" gate="G$1" pin="P15"/>
+<wire x1="101.6" y1="17.78" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
+<label x="101.6" y="30.48" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="CAN2_TX" class="0">
+<segment>
+<pinref part="U$52" gate="G$1" pin="P16"/>
+<wire x1="96.52" y1="17.78" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
+<label x="96.52" y="30.48" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
