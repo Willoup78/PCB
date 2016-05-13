@@ -1538,6 +1538,9 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="U$63" library="STM32F4" deviceset="PAD_FLASH" device=""/>
 <part name="U$64" library="STM32F4" deviceset="PAD_FLASH" device=""/>
+<part name="U$3" library="STM32F4" deviceset="PAD_FLASH" device=""/>
+<part name="U$5" library="STM32F4" deviceset="PAD_FLASH" device=""/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2373,6 +2376,9 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <instance part="GND22" gate="1" x="45.72" y="-10.16"/>
 <instance part="U$63" gate="G$1" x="7.62" y="-27.94"/>
 <instance part="U$64" gate="G$1" x="7.62" y="-35.56"/>
+<instance part="U$3" gate="G$1" x="7.62" y="-43.18"/>
+<instance part="U$5" gate="G$1" x="7.62" y="-20.32"/>
+<instance part="GND24" gate="1" x="0" y="-45.72"/>
 </instances>
 <busses>
 </busses>
@@ -2421,6 +2427,10 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <segment>
 <pinref part="U$59" gate="G$1" pin="P2"/>
 <pinref part="GND22" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
@@ -2677,6 +2687,13 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <pinref part="U$64" gate="G$1" pin="P$1"/>
 <wire x1="0" y1="-35.56" x2="-20.32" y2="-35.56" width="0.1524" layer="91"/>
 <label x="-17.78" y="-35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="0" y1="-20.32" x2="-20.32" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-17.78" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

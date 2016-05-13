@@ -1491,13 +1491,13 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <part name="C20" library="small_mavric" deviceset="SMALL_MAVRIC_CAPACITOR_" device="C0603" value="4.7uF"/>
 <part name="U$11" library="STM32F4" deviceset="CON_CAMERA_FPC_25P_0.3MM" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="U$12" library="small_mavric" deviceset="SMALL_MAVRIC_RESISTOR_" device="R0402" value="10K"/>
+<part name="R17" library="small_mavric" deviceset="SMALL_MAVRIC_RESISTOR_" device="R0402" value="10K"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="U$13" library="small_mavric" deviceset="SMALL_MAVRIC_CAPACITOR_" device="C0402" value="100nF"/>
+<part name="C22" library="small_mavric" deviceset="SMALL_MAVRIC_CAPACITOR_" device="C0402" value="100nF"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="U$14" library="small_mavric" deviceset="SMALL_MAVRIC_RESISTOR_" device="R0402" value="4.7K"/>
-<part name="U$38" library="small_mavric" deviceset="SMALL_MAVRIC_RESISTOR_" device="R0402" value="4.7K"/>
-<part name="U$39" library="small_mavric" deviceset="SMALL_MAVRIC_CAPACITOR_" device="C0402" value="100nF"/>
+<part name="R18" library="small_mavric" deviceset="SMALL_MAVRIC_RESISTOR_" device="R0402" value="4.7K"/>
+<part name="R16" library="small_mavric" deviceset="SMALL_MAVRIC_RESISTOR_" device="R0402" value="4.7K"/>
+<part name="C23" library="small_mavric" deviceset="SMALL_MAVRIC_CAPACITOR_" device="C0402" value="100nF"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="U$40" library="STM32F4" deviceset="LED" device=""/>
 <part name="U$41" library="STM32F4" deviceset="LED" device=""/>
@@ -2357,13 +2357,13 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <instance part="GND11" gate="1" x="-35.56" y="-17.78"/>
 <instance part="U$11" gate="G$1" x="-17.78" y="-71.12"/>
 <instance part="GND6" gate="1" x="-60.96" y="-73.66"/>
-<instance part="U$12" gate="G$1" x="-2.54" y="-88.9" rot="R90"/>
+<instance part="R17" gate="G$1" x="-2.54" y="-88.9" rot="R90"/>
 <instance part="GND7" gate="1" x="-2.54" y="-99.06"/>
-<instance part="U$13" gate="G$1" x="-71.12" y="-83.82"/>
+<instance part="C22" gate="G$1" x="-71.12" y="-83.82"/>
 <instance part="GND8" gate="1" x="-71.12" y="-93.98"/>
-<instance part="U$14" gate="G$1" x="38.1" y="-60.96" rot="R90"/>
-<instance part="U$38" gate="G$1" x="-76.2" y="-60.96" rot="R90"/>
-<instance part="U$39" gate="G$1" x="30.48" y="-81.28"/>
+<instance part="R18" gate="G$1" x="38.1" y="-60.96" rot="R90"/>
+<instance part="R16" gate="G$1" x="-76.2" y="-60.96" rot="R90"/>
+<instance part="C23" gate="G$1" x="30.48" y="-81.28"/>
 <instance part="GND16" gate="1" x="30.48" y="-91.44"/>
 <instance part="P+5" gate="VCC" x="-76.2" y="-50.8"/>
 <instance part="P+6" gate="VCC" x="-71.12" y="-73.66"/>
@@ -2398,17 +2398,17 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <junction x="-53.34" y="-71.12"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-2.54" y1="-93.98" x2="-2.54" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="2"/>
+<pinref part="C22" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="-71.12" y1="-88.9" x2="-71.12" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$39" gate="G$1" pin="2"/>
+<pinref part="C23" gate="G$1" pin="2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="30.48" y1="-86.36" x2="30.48" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
@@ -2541,7 +2541,7 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="P13"/>
-<pinref part="U$12" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="-5.08" y1="-83.82" x2="-2.54" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2549,7 +2549,7 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <segment>
 <pinref part="U$11" gate="G$1" pin="P6"/>
 <wire x1="-30.48" y1="-68.58" x2="-76.2" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="U$38" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="-76.2" y1="-68.58" x2="-76.2" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="-68.58" x2="-99.06" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-96.52" y="-68.58" size="1.778" layer="95"/>
@@ -2570,7 +2570,7 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <segment>
 <pinref part="U$11" gate="G$1" pin="P19"/>
 <wire x1="-5.08" y1="-68.58" x2="38.1" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="U$14" gate="G$1" pin="1"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="-66.04" x2="38.1" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="-68.58" x2="58.42" y2="-68.58" width="0.1524" layer="91"/>
 <label x="53.34" y="-68.58" size="1.778" layer="95"/>
@@ -2589,12 +2589,12 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="U$38" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="-76.2" y1="-55.88" x2="-76.2" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="1"/>
+<pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="-71.12" y1="-81.28" x2="-71.12" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="P10"/>
 <wire x1="-71.12" y1="-78.74" x2="-71.12" y2="-76.2" width="0.1524" layer="91"/>
@@ -2603,7 +2603,7 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U$14" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="-53.34" x2="38.1" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
@@ -2612,7 +2612,7 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <segment>
 <pinref part="U$11" gate="G$1" pin="P16"/>
 <wire x1="-5.08" y1="-76.2" x2="30.48" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="U$39" gate="G$1" pin="1"/>
+<pinref part="C23" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="-76.2" x2="30.48" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-76.2" x2="48.26" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="30.48" y="-76.2"/>

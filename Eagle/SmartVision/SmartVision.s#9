@@ -413,6 +413,9 @@
 <wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
 </package>
+<package name="PAD_FLASH">
+<smd name="P$1" x="0" y="0" dx="1" dy="1" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F407VGT6-100">
@@ -670,6 +673,13 @@
 <wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
 <pin name="P1" x="-2.54" y="-7.62" length="middle" rot="R90"/>
 <pin name="P2" x="2.54" y="-7.62" length="middle" rot="R90"/>
+</symbol>
+<symbol name="PAD_FLASH">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -973,6 +983,21 @@ with LQFP100 footprint (100 pins)</description>
 <connects>
 <connect gate="G$1" pin="P1" pad="P1"/>
 <connect gate="G$1" pin="P2" pad="P2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAD_FLASH">
+<gates>
+<gate name="G$1" symbol="PAD_FLASH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PAD_FLASH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1514,6 +1539,8 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <part name="U$56" library="small_mavric" deviceset="SMALL_MAVRIC_RESISTOR_" device="R0402" value="12.5"/>
 <part name="U$59" library="STM32F4" deviceset="CON_2.54MM_2PINS" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="U$63" library="STM32F4" deviceset="PAD_FLASH" device=""/>
+<part name="U$64" library="STM32F4" deviceset="PAD_FLASH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2347,6 +2374,8 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <instance part="U$52" gate="G$1" x="96.52" y="10.16"/>
 <instance part="U$59" gate="G$1" x="43.18" y="0"/>
 <instance part="GND22" gate="1" x="45.72" y="-10.16"/>
+<instance part="U$63" gate="G$1" x="7.62" y="-27.94"/>
+<instance part="U$64" gate="G$1" x="7.62" y="-35.56"/>
 </instances>
 <busses>
 </busses>
@@ -2637,6 +2666,20 @@ Definition: &lt;a href="http://www.abracon.com/Resonators/ABM10.pdf"&gt;ABM10 da
 <pinref part="U$59" gate="G$1" pin="P1"/>
 <wire x1="40.64" y1="-7.62" x2="40.64" y2="-27.94" width="0.1524" layer="91"/>
 <label x="40.64" y="-25.4" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="SWCLK" class="0">
+<segment>
+<pinref part="U$63" gate="G$1" pin="P$1"/>
+<wire x1="0" y1="-27.94" x2="-20.32" y2="-27.94" width="0.1524" layer="91"/>
+<label x="-17.78" y="-27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SWDIO" class="0">
+<segment>
+<pinref part="U$64" gate="G$1" pin="P$1"/>
+<wire x1="0" y1="-35.56" x2="-20.32" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-17.78" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

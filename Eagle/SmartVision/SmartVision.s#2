@@ -246,8 +246,6 @@
 <wire x1="8.3" y1="-8.3" x2="8.3" y2="8.3" width="0.127" layer="21"/>
 <wire x1="8.3" y1="8.3" x2="-8.3" y2="8.3" width="0.127" layer="21"/>
 <wire x1="-8.2" y1="-7.2" x2="-7.1" y2="-8.3" width="0.127" layer="21"/>
-<text x="-7.5" y="9.2" size="1.27" layer="25">Name</text>
-<text x="-7.3" y="-10.3" size="1.27" layer="27">Value</text>
 </package>
 <package name="MICRO_USB_PLUG">
 <wire x1="-1.95" y1="0" x2="3.6" y2="0" width="0.127" layer="21"/>

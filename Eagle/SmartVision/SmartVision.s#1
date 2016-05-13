@@ -322,7 +322,6 @@
 <wire x1="4" y1="-0.7" x2="4" y2="-10" width="0.127" layer="21"/>
 <wire x1="-4" y1="-10" x2="4" y2="-10" width="0.127" layer="21"/>
 <circle x="0" y="-6" radius="3" width="0.127" layer="21"/>
-<text x="-2.3" y="1.8" size="1.27" layer="25">Name</text>
 </package>
 <package name="LED">
 <smd name="A" x="-1.1" y="0" dx="1.1" dy="1.25" layer="1" rot="R90"/>
