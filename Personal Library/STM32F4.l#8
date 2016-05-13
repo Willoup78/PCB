@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -192,8 +192,12 @@
 <wire x1="-3.6" y1="4.3" x2="3.6" y2="4.3" width="0.127" layer="21"/>
 <wire x1="3.6" y1="4.3" x2="3.6" y2="0" width="0.127" layer="21"/>
 <wire x1="-3.6" y1="4.3" x2="-3.6" y2="0" width="0.127" layer="21"/>
-<pad name="P$1" x="-3.575" y="1.45" drill="0.91" diameter="1.01"/>
-<pad name="P$2" x="3.575" y="1.45" drill="0.91" diameter="1.01"/>
+<pad name="P$1" x="-3.575" y="1.45" drill="0.91" diameter="1.31"/>
+<pad name="P$2" x="3.575" y="1.45" drill="0.91" diameter="1.31"/>
+<smd name="P$3" x="-1" y="1.45" dx="1.5" dy="1.9" layer="1"/>
+<smd name="P$4" x="1" y="1.45" dx="1.5" dy="1.9" layer="1"/>
+<smd name="P$5" x="2.32" y="3.68" dx="1.45" dy="1.15" layer="1" rot="R90"/>
+<smd name="P$6" x="-2.32" y="3.68" dx="1.45" dy="1.15" layer="1" rot="R90"/>
 </package>
 <package name="SWITCH_OFF_(ON)">
 <smd name="P$1" x="-4.595" y="0" dx="2.18" dy="1.6" layer="1"/>
@@ -268,25 +272,32 @@
 <wire x1="0.8" y1="0" x2="0.5" y2="0" width="0.127" layer="21"/>
 </package>
 <package name="CON_2.54MM_18PINS_STACKABLE">
-<pad name="P5" x="0" y="0" drill="0.8"/>
-<pad name="P6" x="2.54" y="0" drill="0.8"/>
-<pad name="P7" x="5.08" y="0" drill="0.8"/>
-<pad name="P4" x="-2.54" y="0" drill="0.8"/>
-<pad name="P3" x="-5.08" y="0" drill="0.8"/>
-<pad name="P2" x="-7.62" y="0" drill="0.8"/>
-<pad name="P8" x="7.62" y="0" drill="0.8"/>
-<pad name="P9" x="10.16" y="0" drill="0.8"/>
-<pad name="P$9" x="0" y="27.5" drill="0.8"/>
-<pad name="P14" x="0" y="27.5" drill="0.8"/>
-<pad name="P13" x="2.54" y="27.5" drill="0.8"/>
-<pad name="P12" x="5.08" y="27.5" drill="0.8"/>
-<pad name="P11" x="7.62" y="27.5" drill="0.8"/>
-<pad name="P10" x="10.16" y="27.5" drill="0.8"/>
-<pad name="P15" x="-2.54" y="27.5" drill="0.8"/>
-<pad name="P16" x="-5.08" y="27.5" drill="0.8"/>
-<pad name="P17" x="-7.62" y="27.5" drill="0.8"/>
-<pad name="P1" x="-10.16" y="0" drill="0.8"/>
-<pad name="P18" x="-10.16" y="27.5" drill="0.8"/>
+<pad name="P5" x="0" y="0" drill="1.55"/>
+<pad name="P6" x="2.54" y="0" drill="1.55"/>
+<pad name="P7" x="5.08" y="0" drill="1.55"/>
+<pad name="P4" x="-2.54" y="0" drill="1.55"/>
+<pad name="P3" x="-5.08" y="0" drill="1.55"/>
+<pad name="P2" x="-7.62" y="0" drill="1.55"/>
+<pad name="P8" x="7.62" y="0" drill="1.55"/>
+<pad name="P9" x="10.16" y="0" drill="1.55"/>
+<pad name="P14" x="0" y="27.5" drill="1.55"/>
+<pad name="P13" x="2.54" y="27.5" drill="1.55"/>
+<pad name="P12" x="5.08" y="27.5" drill="1.55"/>
+<pad name="P11" x="7.62" y="27.5" drill="1.55"/>
+<pad name="P10" x="10.16" y="27.5" drill="1.55"/>
+<pad name="P15" x="-2.54" y="27.5" drill="1.55"/>
+<pad name="P16" x="-5.08" y="27.5" drill="1.55"/>
+<pad name="P17" x="-7.62" y="27.5" drill="1.55"/>
+<pad name="P1" x="-10.16" y="0" drill="1.55"/>
+<pad name="P18" x="-10.16" y="27.5" drill="1.55" rot="R180"/>
+<wire x1="-11.43" y1="-1.27" x2="11.43" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-1.27" x2="11.43" y2="1.27" width="0.127" layer="21"/>
+<wire x1="11.43" y1="1.27" x2="-11.43" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="1.27" x2="-11.43" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="28.77" x2="11.43" y2="28.77" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="26.23" x2="11.43" y2="26.23" width="0.127" layer="21"/>
+<wire x1="-11.4" y1="26.2" x2="-11.4" y2="28.8" width="0.127" layer="21"/>
+<wire x1="11.4" y1="26.2" x2="11.4" y2="28.8" width="0.127" layer="21"/>
 </package>
 <package name="CON_1.25MM_4PINS">
 <smd name="P$1" x="0" y="0" dx="2.1" dy="3" layer="1"/>
@@ -327,8 +338,12 @@
 <wire x1="-0.2" y1="-0.8" x2="0.6" y2="0" width="0.1" layer="21"/>
 </package>
 <package name="CON_2.54MM_2PINS_STACKABLE">
-<pad name="P1" x="-1.27" y="0" drill="0.8"/>
-<pad name="P2" x="1.27" y="0" drill="0.8"/>
+<pad name="P1" x="-1.27" y="0" drill="1.55"/>
+<pad name="P2" x="1.27" y="0" drill="1.55"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
